@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- https://www.youtube.com/watch?v=68O6eOGAGqA -->
+      
+    <style>
+        body {
+            background-image: repeating-radial-gradient(#768c3d, #43cc19, #ffff00);
+            margin: 10px;
+        }
+        .container {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 1.4fr .8fr .8fr 1fr;
+            grid-template-rows: .6fr 1.5fr 1.2fr .5fr;
+            grid-template-areas:
+                "header header header header"
+                "sidebar main main main"
+                "sidebar content1 content1 content1"
+                ". footer footer footer";
+            gap: .2rem;
+        }
+        header {
+            text-align: center;
+            color: #00f;
+            font-size: 30px;
+            grid-area: header;
+        }
+        
+        section {
+            grid-area: main;
+            font-size: 14px;
+            font-family: cursive;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        #img-div {
+            align-content: center;
+        }
+        #sidebar {
+            font-size: 14px;
+            grid-area: sidebar;
+        }
+        #content1 {
+            grid-area: content1;
+            font-family: cursive;
+            font-size: 12px;
+        }
+         footer {
+            font-size: 18px;
+            grid-area: footer;
+        }
+        #tribute-info {
+            justify-content: flex-end;
+        }
+        a:link{
+	        color: #00f;
+	        text-decoration: none;
+        }
+        a:visited{
+	         color: #00f;
+        }
+        a:hover{
+            color: #f00
+}
+        @media only screen and (max-width: 550px) {
+            .container {
+                grid-template-columns: auto;
+                grid-template-rows: .5fr .8fr 1.2fr 1.2fr .5fr;
+                grid-template-areas: 
+                    "header"
+                    "sidebar"
+                    "main"
+                    "content1"
+                    "footer";
+            }  .2fr 1.5fr 1.2fr .8fr
+        }
+        
+    </style>
+</head>
+<body>
+
+<main id="main">
+ <div class="container">
+   
+    <header id="title"><h1>IRON MAIDEN - 1975 to 2020</h1></header>
+    
+    <section style="text-align: center">
+    <div id="img-div"><img id="image" src="https://aircharterservice-globalcontent-live.cphostaccess.com/images/global/news/464606_ef1_table_mountain20resized_tcm87-36777.jpg"><br>
+    <figcaption id="img-caption" >Forget a tour bus, Iron Maiden has a tour Boeing 747. The plane - called Ed Force One after the band's mascot, Eddie - is piloted by lead singer Bruce Dickinson, who is an airline pilot.</figcaption></div>
+    </section>
+    
+    <div id="sidebar">
+    <h2 style="color: #00f;">Studio Albums</h2><br>
+
+
+<b>1980</b> - Iron Maiden<br>
+<b>1981</b> - Killers<br>
+<b>1982</b> - The Number of the Beast<br>
+<b>1983</b> - Piece of Mind<br>
+<b>1984</b> - Powerslave<br>
+<b>1986</b> - Somewhere in Time<br>
+<b>1988</b> - 7<sup>th</sup> Son of a 7<sup>th</sup> Son<br>
+<b>1990</b> - No Prayer for the Dying<br>
+<b>1992</b> - Fear of the Dark<br>
+<b>1995</b> - The X Factor<br>
+<b>1998</b> - Virtual XI<br>
+<b>2000</b> - Brave new World<br>
+<b>2003</b> - Dance of Death<br>
+<b>2006</b> - A matter of life and Death<br>
+<b>2010</b> - The Final Frontier<br>
+<b>2015</b> - The Book of Souls<br>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Iron_Maiden_2010.jpg/330px-Iron_Maiden_2010.jpg">
+   
+    </div>
+    
+    <div id="content1"><p>Founded in Leyton area of London back in 1975 by bassist Steve Harris&#8212;the only original member still playing with the band today&#8212;Iron Maiden have become one of the biggest bands in the world. Since the release of debut album Iron Maiden in 1980, the British heavyweights have released 16 full-length studio albums, and sold over 100 million copies.</p>
+    
+    <div id="band-members">
+      <h2 style="color: #00f; text-align: center;">Members</h2>
+         <p>Steve Harris - bass, Adrian Smith, - Dave Murray, Janick Gers – guitars, Bruce Dickinson - vocals, Nicko McBain - drums<p>
+    </div>
+    </div>
+     <footer id="tribute-info"><a id="tribute-link" href="https://en.wikipedia.org/wiki/Iron_Maiden" target="_blank">Click here for more information about Iron Maiden.</a></footer>
+
+</main>
+</body>
+</html>
+
